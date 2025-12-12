@@ -1,10 +1,9 @@
-/* Global Layout --------------------------------------------------*/
-
+/* GENERAL ----------------------------------------------------*/
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #f3e8ff, #ece6ff, #f8f4ff);
-  color: #333;
+  background: #f5efff; /* very light lavender */
+  color: #2d225c;
 }
 
 .layout {
@@ -13,28 +12,26 @@ body {
   padding: 40px;
 }
 
-/* Sidebar --------------------------------------------------------*/
-
+/* SIDEBAR ----------------------------------------------------*/
 .sidebar {
-  width: 280px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 24px;
-  padding: 30px 20px;
+  width: 260px;
+  background: #f7f1ff;
+  border-radius: 20px;
+  padding: 30px 25px;
   text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(120, 80, 200, 0.15);
+  box-shadow: 0 4px 20px rgba(120, 70, 200, 0.15);
+  border: 1px solid rgba(150, 120, 220, 0.15);
 }
 
 .sidebar svg {
   width: 150px;
   height: 150px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .name {
   font-size: 24px;
-  font-weight: 700;
-  margin: 10px 0 5px;
+  margin-top: 10px;
 }
 
 .title {
@@ -42,38 +39,35 @@ body {
   opacity: 0.7;
 }
 
-/* Content --------------------------------------------------------*/
-
+/* MAIN CONTENT ------------------------------------------------*/
 .content {
   flex: 1;
 }
 
-h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
+.workshops h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
   color: #5a3fc0;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column; /* STACK vertically */
   gap: 25px;
 }
 
-/* Cards ----------------------------------------------------------*/
-
+/* WORKSHOP CARDS ---------------------------------------------*/
 .workshop-card {
   background: white;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 6px 25px rgba(120, 80, 200, 0.15);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(120, 70, 200, 0.1);
   border: 1px solid rgba(150, 120, 220, 0.15);
 }
 
 .workshop-card h3 {
-  font-size: 20px;
-  margin: 0 0 8px;
-  color: #5a3fc0;
+  color: #6a4cd4;
+  margin-bottom: 6px;
 }
 
 .workshop-card p {
@@ -82,28 +76,26 @@ h2 {
 }
 
 .workshop-card a {
-  background: #e8d9ff;
-  color: #5937c5;
-  padding: 6px 14px;
-  border-radius: 50px;
-  font-size: 14px;
-  text-decoration: none;
   display: inline-block;
   margin-top: 6px;
-  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 40px;
+  background: #e8d9ff;
+  color: #5b36c8;
+  font-size: 14px;
+  text-decoration: none;
   transition: 0.2s ease;
 }
 
 .workshop-card a:hover {
-  background: #d7c4ff;
+  background: #d4c1ff;
 }
 
-/* Footer ---------------------------------------------------------*/
-
+/* FOOTER ------------------------------------------------------*/
 .footer {
   text-align: center;
-  margin-top: 30px;
-  padding: 20px;
   font-size: 14px;
+  margin-top: 40px;
+  padding: 20px;
   opacity: 0.7;
 }
